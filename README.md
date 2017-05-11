@@ -109,28 +109,30 @@ anchors:['page1','page2','page3','page4'],
 section的选择器 默认为.section
 - 31.slideSelector
 slide的选择器默认为.slide
+
+
 Fullpage的方法：
 $.fn.fullpage.xxx()
-1.moveSectionUp()
+- 1.moveSectionUp()
 向上滚动一页
-2.moveSectionDown()
+= 2.moveSectionDown()
 向下滚动一页
-3.moveTo(section,slide)
+- 3.moveTo(section,slide)
 滚动到第几页第几张幻灯片 注意：页面是从1开始，幻灯片是从0开始
-4.silentMoveTo(section,slide)
+- 4.silentMoveTo(section,slide)
 与moveTo(section,slide)一样，但是没有动画效果
-5.moveSlideRight()
+- 5.moveSlideRight()
 幻灯片向右滚动
-6.moveSlideLeft()
+- 6.moveSlideLeft()
 幻灯片向左滚动
-7.setAutoScrolling(boolean)
-8.setLockAnchors(boolean)
-9.setRecordHistory(boolean)
-10.setScrollingSpeed(millinsecond)
-11.setAllowScrolling(boolean,[directions])
+- 7.setAutoScrolling(boolean)
+- 8.setLockAnchors(boolean)
+- 9.setRecordHistory(boolean)
+- 10.setScrollingSpeed(millinsecond)
+- 11.setAllowScrolling(boolean,[directions])
 添加或者删除鼠标滚轮或者滑动控制，第一个参数为true时启用，false时禁用，后面的参数为方向，取值为all，left，right，up，down，可以使用多个，使用多个时用逗号隔开
-12.destroy(type)
+- 12.destroy(type)
 销毁fullpage特效，type可以不写，或者使用all，不写type，fullpage给页面添加的样式和html元素还在，如果使用all，则样式、html全部销毁，页面恢复和不使用fullpage相同的效果。
-13.reBuild（）
+- 13.reBuild（）
 重新更新页面和尺寸，用于通过ajax请求改变了页面结构之后，重建效果。
 Lazy loading
